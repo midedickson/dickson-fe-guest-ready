@@ -13,7 +13,7 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import { useReservationContext } from "context/reservations-context";
-import React, { ChangeEventHandler, useState } from "react";
+import React, { useState } from "react";
 
 const AddNewForm = () => {
   const colSpan = useBreakpointValue({ base: 2, md: 1 });

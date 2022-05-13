@@ -142,15 +142,16 @@ const RtxProvider = (props: ProviderProps) => {
         setCreateLoading(false);
         console.log(err);
         err.response && console.log(err.response);
-        if (err.response?.data.errors) {
+        const responseData: any = err.response?.data;
+        if (responseData.errors) {
           if (
-            err.response.data.errors.error &&
-            err.response.data.errors.error.length > 0
+            responseData.errors.error &&
+            responseData.errors.error.length > 0
           ) {
             Swal.fire({
               icon: "error",
               title: "Oops...",
-              text: err.response.data.errors.error[0],
+              text: responseData.errors.error[0],
             });
           }
         } else {
