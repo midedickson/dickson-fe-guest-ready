@@ -3,7 +3,7 @@ import * as React from "react";
 import { useState, createContext, ReactNode, useContext } from "react";
 import Swal from "sweetalert2";
 const BASE_URL =
-  "https://dickson-python-guestready.herokuapp.com//api/v1/reservations";
+  "https://dickson-python-guestready.herokuapp.com/api/v1/reservations";
 
 interface RentalSchema {
   id: number;
