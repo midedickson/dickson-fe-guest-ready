@@ -2,10 +2,8 @@ import axios, { AxiosError, AxiosResponse } from "axios";
 import * as React from "react";
 import { useState, createContext, ReactNode, useContext } from "react";
 import Swal from "sweetalert2";
-import dayjs from "dayjs";
-import { type } from "os";
-
-const BASE_URL = "http://localhost:8000/api/v1/reservations";
+const BASE_URL =
+  "https://dickson-python-guestready.herokuapp.com//api/v1/reservations";
 
 interface RentalSchema {
   id: number;
