@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import {
   Heading,
   VStack,
@@ -22,7 +23,7 @@ const ReservationTable = () => {
   const { reservations, loading, fetchReservations } = useReservationContext();
   useEffect(() => {
     fetchReservations();
-  });
+  }, []);
 
   return (
     <VStack w="full" h="full" p={10} spacing={10} alignItems="flex-start">
