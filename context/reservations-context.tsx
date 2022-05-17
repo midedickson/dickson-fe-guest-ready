@@ -151,6 +151,24 @@ const RtxProvider = (props: ProviderProps) => {
               title: "Oops...",
               text: responseData.errors.error[0],
             });
+          } else if (
+            responseData.errors.name &&
+            responseData.errors.name.length > 0
+          ) {
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: responseData.errors.name[0],
+            });
+          } else if (
+            responseData.errors.check_in &&
+            responseData.errors.check_in.length > 0
+          ) {
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: responseData.errors.check_in[0],
+            });
           }
         } else {
           Swal.fire({
