@@ -92,6 +92,7 @@ const RtxProvider = (props: ProviderProps) => {
               };
             }
           );
+          console.log(mappedData);
 
           setReservations(mappedData);
           setLoading(false);
