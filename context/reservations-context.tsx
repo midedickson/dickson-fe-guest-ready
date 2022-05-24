@@ -16,7 +16,7 @@ export interface IReservation {
   rental: RentalSchema;
   check_in: Date;
   check_out: Date;
-  previous?: IReservation | null;
+  previous?: string | null;
 }
 type ActionType = "set_reservations" | "create_reservations";
 type Action = {
@@ -64,9 +64,9 @@ interface DataResponse {
   id: number;
   name: string;
   rental: RentalSchema;
-  check_in: String;
-  check_out: String;
-  previous?: DataResponse | null;
+  check_in: string;
+  check_out: string;
+  previous?: string | null;
 }
 
 const RtxProvider = (props: ProviderProps) => {

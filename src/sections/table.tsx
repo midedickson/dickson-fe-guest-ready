@@ -57,7 +57,7 @@ const ReservationTable = () => {
                   <Td>{reservation.name}</Td>
                   <Td>{reservation.check_in.toDateString()}</Td>
                   <Td>{reservation.check_out.toDateString()}</Td>
-                  <Td>{reservation.previous?.name}</Td>
+                  <Td>{reservation.previous}</Td>
                 </Tr>
               ))}
             </Tbody>
